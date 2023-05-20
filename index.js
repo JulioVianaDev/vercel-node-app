@@ -9,7 +9,7 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Hey com sucesso 🥳')
+  res.send('Hey com tomate 🥳')
 })
 
 app.get('/about', (req, res) => {
