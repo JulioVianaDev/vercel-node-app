@@ -11,11 +11,9 @@ app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
 })
 
-app.get('/lucas', async function(req, res){
-  const response = await fetch('https://api.sampleapis.com/cartoons/cartoons2D')
-      const data = await response.json()
-      res.send(data)
-  })
+app.get('/', (req, res) => {
+  res.send('Hey com tomate 🥳')
+})
 
 app.get('/about', (req, res) => {
   res.send('This is my about route..... ')
